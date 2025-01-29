@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'Minimal4';
+    src: url('/minimal4/Minimal4.woff') format('woff');
+    font-family: 'MatchupPro';
+    src: url('/matchup-pro-v1/MatchupPro.woff') format('woff');
+    font-family: 'BrainFont';
+    src: url('/4BrainFont/Do4BrainBold-2ODJo.woff') format('woff');
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    background: #1B2A52;
+    vertical-align: middle;
+    display: grid;
+    place-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90vw 90vh;
+    background-image: url("../assets/gridEffect.png");
+    
+}
+.grid{
+    margin: 0 auto;
+    /*display: flex;*/
+    justify-content: center;
+    align-items:center;
+}
+.structure{
+    background-image: url(../assets/bg.png);
+    width: 60.875rem;
+    height: 49.875rem;
+    flex-shrink: 0;
+    position: relative;
+    filter: brightness(40%);
+}
+.leftPanel{
+    width: 25%;
+    height: 100%;
+    padding: 10px;
+}
+.rightPanel{
+    width: 60%;
+    height: 100%;
+}
+#bulb{
+    position: absolute;
+    top: 150px;
+    left: 75px;
+}
+#clock{
+    position: absolute;
+    top: 125px;
+    left: 109px;
+}
+img:nth-child(2){
+    position: absolute;
+    left: 35px;
+}
+img:nth-child(4){
+    position: absolute;
+    left: 71px;
+}
+img:nth-child(5){
+    position: absolute;
+    left: 106px;
+}
+#date{
+    position: absolute;
+    top: 69px;
+    left: 22px;
+    font-family: MatchupPro;
+    font-size: 28px;
+}
+#location{
+    position: absolute;
+    top: 69.5px;
+    left: 123px;
+    font-family: MatchupPro;
+    font-size: 28px;
+}
+.title{
+    position: absolute;
+    top: 175px;
+    left: 475px;
+}
+.title h1{
+    font-family: BrainFont;
+    font-size: 50px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.subtitle{
+    position: absolute;
+    top: 260px;
+    left: 473.5px;
+}
+.subtitle h2{
+    font-family: MatchupPro;
+    font-size: 35px;
+}
+.desc{
+    position: absolute;
+    width: 340px;
+    height: 70px;
+    top: 535px;
+    left: 460px;
+    font-family: BrainFont;
+    font-size: 15px;
+}
+#leds{
+    position: absolute;
+    bottom: 132px;
+    right: 77px;
+}
+#powerButton{
+    position: absolute;
+    top: 632px;
+    right: 35px;
+}
